@@ -1,7 +1,4 @@
 {
-	"enabledApiProposals": [
-		"inlineCompletions"
-	],
 	"name": "inline-completion-sample",
 	"displayName": "Inline Completion Sample",
 	"description": "Sample showing how to implement an inline completion provider",
@@ -17,6 +14,7 @@
 	"activationEvents": [
 		"*"
 	],
+	"enabledApiProposals": ["inlineCompletionsAdditions"],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -43,6 +41,7 @@
 		"postinstall": "npm run download-api"
 	},
 	"devDependencies": {
+		"@types/vscode": "^1.68.0",
 		"@types/node": "^16.11.7",
 		"@typescript-eslint/eslint-plugin": "^5.30.0",
 		"@typescript-eslint/parser": "^5.30.0",
